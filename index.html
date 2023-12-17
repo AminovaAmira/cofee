@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня Startup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header class="border-bottom border-black">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <img src="./images/logo_187_50.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="#course">О курсе</a>
+            <a class="nav-link" href="#prog">Программа</a>
+            <a class="nav-link " href="#contacts">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-grey">
+      <div class="container">
+        <div class="row px-5 py-5">
+          <div class="col-lg-6 text-center text-lg-start d-grid gap-3" id="course">
+            <h1>Кофейня Startup</h1>
+            <div>
+              <p>
+                Проект для стартапа кофейни представляет собой концепцию создания уникального пространства, где клиенты
+                могут наслаждаться высококачественным кофе, уютной атмосферой и социальными взаимодействиями.
+                Основная цель стартапа - создание места, объединяющего любителей кофе, предпринимателей, работающих
+                удаленно, студентов и всех, кто ищет вдохновение.
+                Кроме того, кофейня может предлагать разнообразие выпечки, напитков, а также организовывать мероприятия,
+                встречи и уроки по кофе.
+                Успешный стартап кофейни должен стремиться к созданию уникального бренда, уделять внимание качеству
+                обслуживания и развивать сообщество клиентов вокруг своего заведения.
+              </p>
+            </div>
+            <div class="py-3">
+              <button type="button" class="btn btn-light btn-outline-dark rounded-0 px-4">Подробнее</button>
+              <button type="button" class="btn btn-dark rounded-0 px-4">Написать нам</button>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="images/coffee-shop.jpg" alt="Кофейня">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="fw-bold text-center" id="prog">Особенности и преимущества</h2>
+      <div class="line"></div>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <ul>
+            <li>Уникальный дизайн и атмосфера</li>
+            <li>Широкий выбор высококачественного кофе и напитков</li>
+            <li>Использование цифровых технологий для улучшения сервиса</li>
+            <li>Организация социальных мероприятий и встреч</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Точечная фокусировка на каждом аспекте бизнеса</li>
+            <li>Потенциал для стабильного роста в индустрии общественного питания</li>
+            <li>Создание социального центра и привлечение постоянных клиентов</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts bg-grey py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4" id="contacts">Контакты</h2>
+        <div class="line"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="feedback-form" action="https://httpbin.org/post" method="post">
+              <div class="mb-3">
+                <label for="email" class="form-label">Электронная почта:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите почту..." name="email"
+                  required>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя:</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите имя..." name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Сообщение:</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Введите текст..." rows="6"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark rounded-0 px-4">Отправить</button>
+            </form>
+          </div>
+
+          <div id="map" class="col-md-6">
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A757a6c3be49459d6a9fb8e8ff996b8f109fd88506cd3b8d02f0a69f94fb69f8f&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6 d-flex">
+            <div>
+              <h3 class="mb-3">Наш адрес:</h3>
+              <p>Город, Улица, Здание</p>
+            </div>
+            <div class="ms-5">
+              <h3 class="mb-3">Телефон:</h3>
+              <p>+7 123 456 789</p>
+            </div>
+            <div class="ms-5">
+              <h3 class="mb-3">Электронная почта:</h3>
+              <p>info@coffeestartup.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsy

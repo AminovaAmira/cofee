@@ -1,0 +1,88 @@
+.bg-grey {
+  background-color: #eaecf0;
+}
+.bg-blue {
+  background-color: #84dbff;
+}
+.line {
+  margin: auto;
+  background-color: #84dbff;
+  height: 4px;
+  width: 200px;
+  margin-top: 20px;
+}
+.text-blue {
+  color: #84dbff;
+}
+
+.technology .img-fluid {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.kra {
+  height: 300px;
+}
+
+#map {
+  float: left;
+  width: 50%; /* Ширина карты будет 50% от ширины страницы */
+  height: 400px;
+}
+form {
+  float: right;
+  width: 50%;
+}
+input[type="email"],
+input[type="text"] {
+  width: 80%;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 80%;
+}
+
+.bg-grey {
+  background-color: #eaecf0;
+}
+
+.contacts {
+  background-color: #eaecf0;
+}
+
+.line {
+  margin: auto;
+  background-color: #84dbff;
+  height: 4px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.text-blue {
+  color: #84dbff;
+}
+
+.contacts form {
+  float: right;
+  width: 100%; /* Исправлено, чтобы форма занимала всю доступную ширину */
+}
+
+.contacts input[type="email"],
+.contacts input[type="text"] {
+  width: 100%; /* Исправлено, чтобы инпуты занимали всю доступную ширину */
+  margin-bottom: 10px;
+}
+
+.contacts textarea {
+  width: 100%; /* Исправлено, чтобы textarea занимал всю доступную ширину */
+}
+
+.technology .img-fluid {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.kra {
+  height: 300px;
+}
